@@ -1,6 +1,6 @@
 const { gql } = require("apollo-server");
 
-const typeDefs = gql`
+export const typeDefs = gql`
   type City {
     id: ID
     name: String
@@ -53,6 +53,7 @@ const typeDefs = gql`
 
   type Query {
     getCityByName(name: String!, country: String, config: ConfigInput): City
+    getWeatherByGeoCoordinators(latitude: Float!, longitude: Float!, config: ConfigInput): City
     getCityById(id: [String!], config: ConfigInput): [City]
   }
 
@@ -115,6 +116,3 @@ const typeDefs = gql`
   }
 `;
 
-module.exports = {
-  typeDefs,
-};

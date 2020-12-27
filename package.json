@@ -2,10 +2,10 @@
   "name": "graphql-weather-api",
   "version": "1.0.0",
   "description": "A GraphQL Wrapper for the Open Weather Map API",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "nodemon index.js",
-    "dev": "nodemon -r dotenv/config index.js"
+    "start": "nodemon index.ts",
+    "dev": "nodemon -r dotenv/config index.ts"
   },
   "keywords": [
     "weather",
